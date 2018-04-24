@@ -1,0 +1,74 @@
+
+
+/* ----------------------- BASIC RULES- --------------------------*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 2em;
+	color: black;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1.4em;
+	color: black;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1em;
+	color: #404040;
+}
+
+p {
+	font-size: 1em;
+	color: black;
+}
+
+
+
+/* ---------------------- CLASS SELECTORS --------------------------*/
+
+
+.main-header p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2em;
+	color: slategrey;
+}
+
+.main-nav {
+
+
+}
+
+.main-nav a {
+	color: #000;
+	font-size: 1.2em;
+	font-family: sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: orangered;
+	background-color: #EBEBEB;
+	border-radius: 10px;
+
+}
+
+.main-content {
+
+}
+
+.portfolio-card {
+
+}
