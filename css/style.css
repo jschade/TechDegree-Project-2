@@ -1,40 +1,42 @@
 
 
-/* ------------------------- BASIC RULES ----------------------------*/
+/* ------------------------------------------ BASIC RULES ---- */
 
 
 * {
 	box-sizing: border-box;
 	margin: 0;
-}
-
-body {
-	margin: 0;
 	text-align: center;
 }
 
+body {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	background-color: white;
+}
+
 h1 {
-	font-family: 'Rokkitt', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 3em;
 	color: black;
-	text-transform: uppercase;
 }
 
 h2 {
-	font-family: 'Rokkitt', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 2.5em;
 	color: black;
 	text-transform: uppercase;
 }
 
 h3 {
-	font-family: 'Rokkitt', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 2em;
 	color: #404040;
 }
 
 p {
-	font-family: 'Rokkitt', serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 1.5em;
 	color: black;
 }
@@ -49,7 +51,7 @@ li {
 
 a {
 	color: #000;
-	font-family: sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	text-decoration: none;
 }
 
@@ -60,13 +62,16 @@ a:hover {
 
 
 
-/* ---------------------- CLASS SELECTORS --------------------------*/
+/* ------------------------------------- CLASS SELECTORS ---- */
+
 
 
 .main-header {
 	width: 100%;
-	background-color: seashell;
+	background-color: #EBEBEB;
 	text-align: center;
+	padding: 10px;
+	padding-bottom: 15px;
 }
 
 .main-header p {
@@ -75,13 +80,18 @@ a:hover {
 }
 
 .main-nav {
-	background-color: pink;
+	background-color: #EBEBEB;
 }
 
 .main-nav a {
 	font-size: 1.2em;
-	font-family: sans-serif;
+	font-family: 'PT Sans', sans-serif;
+	display: block;
+	margin: auto;
 	text-transform: uppercase;
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 1em;
 }
 
 .main-nav a:hover {
@@ -96,7 +106,6 @@ a:hover {
 }
 
 .main-content {
-	color: blue;
 	text-align: center;
 }
 
@@ -106,21 +115,28 @@ a:hover {
 }
 
 .profile-writeup p {
+	background-color: #EBEBEB;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 2em;
 	color: darkslategrey;
 }
 
 .profile-picture {
-
+	width: 40%;
 }
 
 .main-portfolio {
+	background-color: white;
 	text-align: center;
+	margin: auto;
 }
 
 .portfolio-card {
 	display: inline-block;
+}
+
+.portfolio-card h3 {
+	color: orange;
 }
 
 .portfolio-card img {
@@ -128,14 +144,15 @@ a:hover {
 }
 
 .main-footer {
-	background-color: purple;
+	clear: both;
+	background-color: #EBEBEB;
 	width: 100%;
 
 }
 
 
 
-/* ------------------------ CLEARFIX ----------------------------*/
+/* --------------------------------------------- CLEAR FIX ---- */
 
 
 
@@ -148,7 +165,7 @@ a:hover {
 
 
 
-/* ---------------------- MEDIA QUERIES --------------------------*/
+/* ------------------------------------------ MEDIA QUERIES ---- */
 
 
 
@@ -159,11 +176,36 @@ a:hover {
 @media (min-width: 320px) {
 
 	.main-porfolio {
-
+		margin: auto;
 	}
 
 	.portfolio-card {
+		
+		margin-bottom: 2em;
+	}
 
+	.main-nav {
+		width: 100%;
+	}
+
+	.main-nav ul {
+		list-style: none;
+		margin-bottom: 15px;
+		padding: 0;
+	}
+
+	.main-nav li {
+		padding-bottom: 0.5em;
+	}
+
+	.profile-picture {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.intro {
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }
 
@@ -173,10 +215,57 @@ a:hover {
 
 @media (min-width: 768px) {
 
+	.wrapper {
+
+	}
+
+
+	.main-portfolio {
+		width: 100%;
+		text-align: center;
+		margin: auto;
+		padding-bottom: 25px;
+	}
+
 	.portfolio-card {
 		display: inline-block;
 		width: 40%;
 		float: left;
+		margin-left: 2em;
+		margin-bottom: 2em;
+	}
+
+	.main-header {
+		height: 200px;
+		text-align: center;
+	}
+
+	.headerName {
+	/*	float: left;
+		position: absolute;
+		top: 0;
+		left: 0;*/
+	}
+
+	.main-nav {
+		width: 100%;
+		margin: auto;
+	}
+
+	.main-nav ul {
+		width: 100%;
+		list-style-type: none;
+	}
+
+	.main-nav li {
+		text-align: center;
+		display: inline-block;
+		float: left;
+		padding-left: 1.5em;
+	}
+
+	.main-nav a {
+		background-color: #EBEBEB;
 	}
 }
 
@@ -187,9 +276,55 @@ a:hover {
 
 @media (min-width: 1024px) {
 
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.headerName {
+		display: inline-block;
+		float: left;
+	}
+
+	.main-nav {
+		display: inline-block;
+		float: right;
+	}
+
+	.main-nav ul {
+		list-style: none;
+		float: left;
+		bottom: 0;
+		right: 0;
+	}
+
+	.main-content {
+		background-color: #EBEBEB;
+		display: inline-block;
+		float: left;
+
+	}
+
+	.intro {
+		width: 100%;
+		margin-left: 3em;
+
+	}
+
+	.profile-picture{
+		width: 40%;
+		float: right;
+		margin: 5px, 5px;
+	}
+
+	.main-portfolio {
+		margin: auto;
+	}
+
 	.portfolio-card {
 		display: inline-block;
 		width: 30%;
 		float: left;
+		margin-left: 2em;
 	}
 }

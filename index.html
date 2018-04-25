@@ -8,21 +8,21 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 </head>
 
-	<body>
+	<body class="wrapper">
 
 		<header class="main-header">
-			<h1>Jeffrey Schade</h1>
-				<nav class="main-nav">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
+			<h1 class="headerName">Jeffrey Schade</h1>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
 		</header>
 
 		<div class="container">
@@ -31,12 +31,15 @@
 
 				<img src="images/responsive-layout-profile.png" alt="My profile picture" class="profile-picture" />
 
-				<span class="profile-writeup">
-					<p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am exited to put all my skills to use!</p>
-				</span>
+				<div class="intro">
+					<span class="profile-writeup">
+						<p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am exited to put all my skills to use!</p>
+					</span>
+				</div>
+
 			</div>
 
-				<div class="main-portfolio">
+				<div class="main-portfolio clearfix">
 					<h2>Portfolio</h2>
 
 					<div class="portfolio-card">
@@ -81,15 +84,10 @@
 			</div>
 		</div>
 
-		<footer class="main-footer">
-			<h2>Jeffrey Schade</h2>
-			<a href="#top"><h2>Back to top</h2></a>
-
-
-
-
-
-
+		<footer class="main-footer clearfix">
+			<h3>Jeffrey Schade</h3>
+			<a href="#top"><h3>Back to top</h3></a>
+		</footer>
 
 	</body>
 </html>
