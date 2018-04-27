@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<title>Jeffrey Schade's Portfolio</title>
+	<title>Jeffrey Schade | Front End Web Developer</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -12,82 +13,88 @@
 
 </head>
 
-	<body class="wrapper">
+<body>
 
-		<header class="main-header">
-			<h1 class="headerName">Jeffrey Schade</h1>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+<div class="wrapper">
 
-		<div class="container">
+	<header class="header">
 
-			<div class="main-content">
+		<div class="name-div">
+			<h1 class="top-name">Jeffrey Schade</h1>
 
-				<img src="images/responsive-layout-profile.png" alt="My profile picture" class="profile-picture" />
-
-				<div class="intro">
-					<span class="profile-writeup">
-						<p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am exited to put all my skills to use!</p>
-					</span>
-				</div>
-
-			</div>
-
-				<div class="main-portfolio clearfix">
-					<h2>Portfolio</h2>
-
-					<div class="portfolio-card">
-						<a href="#"><img src="images/portfolio-1.png"  alt="A Marketing Page"></a>
-						<h3>Marketing Page</h3>
-						<p>This project shows the front page of a marketing website meant for a specific business I'm internest in.</p>
-					</div>
-
-					<div class="portfolio-card">
-						<a href="#"><img src="images/portfolio-2.png"  alt="A Search Page"></a>
-						<h3>Search Page</h3>
-						<p>This project searches through a specific database to find information that the user is trying to look up.</p>
-					</div>
-
-					<div class="portfolio-card">
-						<a href="#"><img src="images/portfolio-3.png"  alt="A Travel App"></a>
-						<h3>Travel App</h3>
-						<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-					</div>
-
-					<div class="portfolio-card">
-						<a href="#"><img src="images/portfolio-4.png"  alt="A Map of favorite spots"></a>
-						<h3>Map of Favorite Spots</h3>
-						<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-					</div>
-
-					<div class="portfolio-card">
-						<a href="#"><img src="images/portfolio-5.png"  alt="A Photo Gallery"></a>
-						<h3>Photo Gallery</h3>
-						<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-					</div>
-
-					<div class="portfolio-card">
-						<a href="#"><img src="images/portfolio-6.png"  alt="A Calculator"></a>
-						<h3>Calculator</h3>
-						<p>Someone can enter in the numbers they want, and press the big blue button to get the result.</p>
-					</div>
-					
-				</div>
-
-				</div>
+			<div class="nav-div">	
+				<nav class="nav clearfix">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 
+	</header>
+
+		<div class="intro clearfix">
+
+			<img src="images/responsive-layout-profile.png" alt="My profile picture" class="profileIMG" />
+
+			<p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am exited to put all my skills to use!</p>
+			
+		</div>
+
+		<div class="portfolio clearfix">
+
+			<h2 class="portfolio-head">Portfolio</h2>
+
+			<div class="portfolio-card clearfix">
+				<a href="#"><img src="images/portfolio-1.png"  alt="A Marketing Page" class="card-image"></a>
+				<h3>Marketing Page</h3>
+				<p>This project shows the front page of a marketing website meant for a specific business I'm internest in.</p>
+			</div>
+
+			<div class="portfolio-card">
+				<a href="#"><img src="images/portfolio-2.png"  alt="A Search Page" class="card-image"></a>
+				<h3>Search Page</h3>
+				<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+			</div>
+
+			<div class="portfolio-card">
+				<a href="#"><img src="images/portfolio-3.png"  alt="A Travel App" class="card-image"></a>
+				<h3>Travel App</h3>
+				<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+			</div>
+
+			<div class="portfolio-card">
+				<a href="#"><img src="images/portfolio-4.png"  alt="A Map of favorite spots" class="card-image"></a>
+				<h3>Map of Favorite Spots</h3>
+				<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+			</div>
+
+			<div class="portfolio-card">
+				<a href="#"><img src="images/portfolio-5.png"  alt="A Photo Gallery" class="card-image"></a>
+				<h3>Photo Gallery</h3>
+				<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+			</div>
+
+			<div class="portfolio-card">
+				<a href="#"><img src="images/portfolio-6.png"  alt="A Calculator" class="card-image"></a>
+				<h3>Calculator</h3>
+				<p>Someone can enter in the numbers they want, and press the big blue button to get the result.</p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div class="footer">
+
 		<footer class="main-footer clearfix">
-			<h3>Jeffrey Schade</h3>
-			<a href="#top"><h3>Back to top</h3></a>
+			<h3 class="footname">Jeffrey Schade</h3>
+			<a href="#top"><h3 class="footlink">Back to top</h3></a>
 		</footer>
 
-	</body>
+	</div>
+
+
+</body>
 </html>

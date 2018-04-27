@@ -1,159 +1,108 @@
 
 
-/* ------------------------------------------ BASIC RULES ---- */
+/* ------------------------------------------ BASIC RULES --*/
 
 
-* {
+
+*{
 	box-sizing: border-box;
-	margin: 0;
 	text-align: center;
+	margin: 0;
 }
 
 body {
-	width: 100%;
-	margin: 0;
-	text-align: center;
-	background-color: white;
+	background-color: #EBEBEB;
 }
 
-h1 {
+h1, h2, h3, p, a {
 	font-family: 'PT Sans', sans-serif;
-	font-size: 3em;
-	color: black;
-}
-
-h2 {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 2.5em;
-	color: black;
-	text-transform: uppercase;
-}
-
-h3 {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 2em;
-	color: #404040;
-}
-
-p {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 1.5em;
-	color: black;
-}
-
-ul {
-	list-style-type: none;
-}
-
-li {
-	
 }
 
 a {
-	color: #000;
-	font-family: 'PT Sans', sans-serif;
+	color: #404040;
 	text-decoration: none;
 }
 
-a:hover {
-	color: orangered;
-	text-decoration: underline;
-}
+
+
+/* ------------------------------------- CLASS SELECTORS ---*/
 
 
 
-/* ------------------------------------- CLASS SELECTORS ---- */
-
-
-
-.main-header {
+.wrap {
 	width: 100%;
+}
+
+.nav ul {
+	list-style-type: none;
 	background-color: #EBEBEB;
-	text-align: center;
-	padding: 10px;
-	padding-bottom: 15px;
+	padding-left: 0;
 }
 
-.main-header p {
-	font-size: 2em;
-	color: slategrey;
-}
-
-.main-nav {
-	background-color: #EBEBEB;
-}
-
-.main-nav a {
-	font-size: 1.2em;
-	font-family: 'PT Sans', sans-serif;
-	display: block;
-	margin: auto;
+.nav a {
+	display: inline-block;
+	font-size: 1.3em;
+	color: #404040;
+	text-decoration: none;
 	text-transform: uppercase;
 	background-color: #fff;
-	width: 100%;
-	padding-bottom: 1em;
-}
-
-.main-nav a:hover {
-	color: orangered;
-	background-color: #EBEBEB;
-	text-decoration: none;
+	width: 90%;
+	margin: 5px;
+	margin-bottom: 5px;
+	padding: 0.5em 0 0.5em 0;
+	border-radius: 10px;
 
 }
 
-.container {
-	width: 100%;
+.nav a:hover {
+	color: #404040;
+	background-color: orange;
 }
 
-.main-content {
-	text-align: center;
-}
-
-.profile-writeup {
-	width: 40%;
-	font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.profile-writeup p {
-	background-color: #EBEBEB;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 2em;
-	color: darkslategrey;
-}
-
-.profile-picture {
-	width: 40%;
-}
-
-.main-portfolio {
-	background-color: white;
-	text-align: center;
+.intro {
+	width: 90%;
+	padding-top: 1em;
+	padding-bottom: 2em;
 	margin: auto;
+}
+
+.profileIMG {
+ 	width: 100%;
+ 	height: auto;
 }
 
 .portfolio-card {
-	display: inline-block;
-}
-
-.portfolio-card h3 {
-	color: orange;
-}
-
-.portfolio-card img {
 	width: 100%;
+	padding-bottom: 2em;
 }
 
-.main-footer {
-	clear: both;
-	background-color: #EBEBEB;
-	width: 100%;
+.card-image {
+	width: 90%;
+	padding-bottom: 1em;
+}
 
+.footer {
+	margin-top: 2em;
+	height: 4em;
+
+}
+
+.footname {
+	float: left;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+
+.footlink {
+	float: right;
+	margin-right: 5%;
+	margin-top: 20px;
 }
 
 
 
-/* --------------------------------------------- CLEAR FIX ---- */
 
+/* -------------------------------------------- CLEARFIX ---*/
 
 
 
@@ -165,166 +114,70 @@ a:hover {
 
 
 
-/* ------------------------------------------ MEDIA QUERIES ---- */
+/* ----------------------------- MEDIA QUERIES 768 PIXELS ---*/
 
-
-
-
-/* 320 PIXEL SCREEN */
-
-
-@media (min-width: 320px) {
-
-	.main-porfolio {
-		margin: auto;
-	}
-
-	.portfolio-card {
-		
-		margin-bottom: 2em;
-	}
-
-	.main-nav {
-		width: 100%;
-	}
-
-	.main-nav ul {
-		list-style: none;
-		margin-bottom: 15px;
-		padding: 0;
-	}
-
-	.main-nav li {
-		padding-bottom: 0.5em;
-	}
-
-	.profile-picture {
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	.intro {
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-}
-
-
-/* 768 PIXEL SCREEN */
 
 
 @media (min-width: 768px) {
 
-	.wrapper {
-
+	.nav {
+		width: 100%;
+		margin: auto;
 	}
 
+	.nav li {
+		display: inline-block;
+	}
 
-	.main-portfolio {
-		width: 100%;
-		text-align: center;
-		margin: auto;
-		padding-bottom: 25px;
+	.nav a {
+		margin: 0 1em 0 1em;
+	}
+
+	.intro {
+		margin: 2em 2em 2em 2em;
+	}
+
+	.intro p {
+		font-size: 1.5em;
+	}
+
+	.profileIMG {
+		width: 40%;
+		float: right;
+	}
+
+	.portfolio {
+	}
+
+	.portfolio-head {
+		margin: 0.5em 0 1em 0;
 	}
 
 	.portfolio-card {
 		display: inline-block;
 		width: 40%;
-		float: left;
-		margin-left: 2em;
-		margin-bottom: 2em;
 	}
 
-	.main-header {
-		height: 200px;
-		text-align: center;
-	}
 
-	.headerName {
-	/*	float: left;
-		position: absolute;
-		top: 0;
-		left: 0;*/
-	}
 
-	.main-nav {
-		width: 100%;
-		margin: auto;
-	}
-
-	.main-nav ul {
-		width: 100%;
-		list-style-type: none;
-	}
-
-	.main-nav li {
-		text-align: center;
-		display: inline-block;
-		float: left;
-		padding-left: 1.5em;
-	}
-
-	.main-nav a {
-		background-color: #EBEBEB;
-	}
 }
 
 
 
-/* 1024 PIXEL SCREEN */
+
+/* ----------------------------- MEDIA QUERIES 1024 PIXELS ---*/
+
 
 
 @media (min-width: 1024px) {
 
 
-	.wrapper {
-		width: 100%;
-	}
-
-	.headerName {
-		display: inline-block;
-		float: left;
-	}
-
-	.main-nav {
-		display: inline-block;
-		float: right;
-	}
-
-	.main-nav ul {
-		list-style: none;
-		float: left;
-		bottom: 0;
-		right: 0;
-	}
-
-	.main-content {
-		background-color: #EBEBEB;
-		display: inline-block;
-		float: left;
-
-	}
-
-	.intro {
-		width: 100%;
-		margin-left: 3em;
-
-	}
-
-	.profile-picture{
-		width: 40%;
-		float: right;
-		margin: 5px, 5px;
-	}
-
-	.main-portfolio {
-		margin: auto;
-	}
 
 	.portfolio-card {
 		display: inline-block;
-		width: 30%;
-		float: left;
-		margin-left: 2em;
+		width: 31%;
 	}
+
+
+
 }
