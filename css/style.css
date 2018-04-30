@@ -169,7 +169,6 @@ p {
 
 
 
-
 /* ----------------------------- MEDIA QUERIES 1024 PIXELS ---*/
 
 
@@ -182,11 +181,13 @@ p {
 		margin-left: 2em;
 	}
 
-	.nav {
-		
+	.nav ul {
+		float: right;
+		margin-right: 4em;
 	}
 
 	.nav li {
+		vertical-align: ;
 		margin-top: 2em;
 	}
 
