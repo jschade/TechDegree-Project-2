@@ -42,6 +42,11 @@ a {
 	width: 100%;
 }
 
+.top-name {
+	text-shadow: 1px 1px 1px #333;
+	letter-spacing: 4px;
+}
+
 .nav {
 	display: inline-block;
 	width: 100%;
@@ -77,6 +82,12 @@ a {
 	padding-top: 1em;
 	padding-bottom: 2em;
 	margin: auto;
+}
+
+.intro p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2em;
+	text-shadow: 2px 2px 1px #bbb;
 }
 
 .profileIMG {
@@ -202,7 +213,7 @@ a {
  	}
 
 	.intro p {
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 
 	.profileIMG {
