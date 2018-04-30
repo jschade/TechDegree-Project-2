@@ -19,13 +19,13 @@ h1, h2, h3, p, a {
 	margin-bottom: 1em;
 }
 
+h1, h2 {
+	text-transform: uppercase;
+}
+
 a {
 	color: #404040;
 	text-decoration: none;
-}
-
-p {
-	height: 50px;
 }
 
 
@@ -72,7 +72,10 @@ p {
 
 .profileIMG {
  	width: 100%;
- 	height: auto;
+}
+
+.portfolio-head {
+	padding-bottom: 20px;
 }
 
 .portfolio-card {
@@ -81,14 +84,28 @@ p {
 }
 
 .card-image {
-	width: 90%;
+	width: 95%;
 	padding-bottom: 1em;
+}
+
+.portfolio {
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	width: 95%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.contact {
+	margin: auto;
+	padding-top: 40px;
+	width: 75%;
 }
 
 .footer {
 	margin-top: 2em;
 	height: 4em;
-
 }
 
 .footname {
@@ -153,9 +170,6 @@ p {
 		margin-left: 2em;
 	}
 
-	.portfolio {
-	}
-
 	.portfolio-head {
 		margin: 0.5em 0 1em 0;
 	}
@@ -163,6 +177,12 @@ p {
 	.portfolio-card {
 		display: inline-block;
 		width: 49%;
+	}
+
+	.portfolio-card p {
+		font-size: 2vw;
+		margin-left: 2em;
+		margin-right: 2em;
 	}
 
 }
@@ -194,6 +214,12 @@ p {
 	.portfolio-card {
 		display: inline-block;
 		width: 31%;
+	}
+
+	.portfolio-card p {
+		font-size: 1vw;
+		margin-left: 2em;
+		margin-right: 2em;
 	}
 
 
