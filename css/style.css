@@ -23,6 +23,11 @@ h1, h2 {
 	text-transform: uppercase;
 }
 
+h1 {
+	font-family: 'Amatic SC', cursive;
+	color: orange;
+}
+
 a {
 	color: #404040;
 	text-decoration: none;
@@ -34,6 +39,11 @@ a {
 
 
 .wrap {
+	width: 100%;
+}
+
+.nav {
+	display: inline-block;
 	width: 100%;
 }
 
@@ -55,7 +65,6 @@ a {
 	margin-bottom: 5px;
 	padding: 0.5em 0 0.5em 0;
 	border-radius: 10px;
-
 }
 
 .nav a:hover {
@@ -72,6 +81,7 @@ a {
 
 .profileIMG {
  	width: 100%;
+ 	border-radius: 10px;
 }
 
 .portfolio-head {
@@ -97,6 +107,28 @@ a {
 	padding-bottom: 40px;
 }
 
+.about {
+	width: 95%;
+	margin: auto;
+	margin-top: 40px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 30px 0 30px 0;
+}
+
+.about p {
+	margin: auto;
+	width: 85%;
+	padding-top: 20px;
+}
+
+.jeffrey-picture {
+	width: 20%;
+	height: auto;
+	border-radius: 50%;
+	border: 5px solid #bbb;
+}
+
 .contact {
 	margin: auto;
 	padding-top: 40px;
@@ -118,6 +150,10 @@ a {
 	float: right;
 	margin-right: 5%;
 	margin-top: 20px;
+}
+
+.large-footer {
+	display: none;
 }
 
 
@@ -142,8 +178,13 @@ a {
 @media (min-width: 768px) {
 
 	.nav {
+		display: inline-block;
 		width: 100%;
 		margin: auto;
+	}
+
+	.nav ul {
+		margin-right: 20px;
 	}
 
 	.nav li {
@@ -185,6 +226,26 @@ a {
 		margin-right: 2em;
 	}
 
+	.large-footer {
+		display: inline-block;
+		margin-top: 20px;
+		float: right;
+		padding-right: 55px;
+	}
+
+	.large-footer a {
+		padding: 0 1em 0 1em;
+		text-transform: uppercase;
+	}
+
+	.large-footer a:hover {
+		color: orange;
+	}
+
+	.small-footer {
+		display: none;
+	}
+
 }
 
 
@@ -203,11 +264,11 @@ a {
 
 	.nav ul {
 		float: right;
+		margin-top: -100px;
 		margin-right: 4em;
 	}
 
 	.nav li {
-		vertical-align: ;
 		margin-top: 2em;
 	}
 
