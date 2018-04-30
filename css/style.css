@@ -150,6 +150,7 @@ p {
 	.profileIMG {
 		width: 40%;
 		float: right;
+		margin-left: 2em;
 	}
 
 	.portfolio {
@@ -163,7 +164,7 @@ p {
 		display: inline-block;
 		width: 49%;
 	}
-	
+
 }
 
 
@@ -175,7 +176,19 @@ p {
 
 @media (min-width: 1024px) {
 
+	.top-name {
+		float: left;
+		margin-top: 1em;
+		margin-left: 2em;
+	}
 
+	.nav {
+		
+	}
+
+	.nav li {
+		margin-top: 2em;
+	}
 
 	.portfolio-card {
 		display: inline-block;
